@@ -1,5 +1,6 @@
 import xlwt
 import DBManage as db
+from datetime import date
 
 '''
 Function: mergeData
@@ -25,6 +26,7 @@ Params:
 	fields = xlwt sheet, just to get custom widths
 '''
 
+
 def widths(sheet):
     c1 = sheet.col(0)
     c2 = sheet.col(1)
@@ -35,7 +37,7 @@ def widths(sheet):
     c7 = sheet.col(7)
     c8 = sheet.col(8)
     c1.width = 256 * 3
-    c2.width = 256 * 6
+    c2.width = 256 * 8
     c3.width = 256 * 32
     c4.width = 256 * 16
     c5.width = 256 * 10
@@ -55,19 +57,33 @@ sample:
 	mergeData('excelFile.xls', ['a'], ['queryA'])
 '''
 
+
 def writeData(fileName, columnNames, fields):
     genfield = ''
     # excel workbook and sheet
     master = xlwt.Workbook()
     sheet1 = master.add_sheet('Report')
 
+    # styles
+    # bold and grey
+    bg = xlwt.easyxf(
+        "font: bold on; align: horiz center; pattern: pattern solid, fore_colour grey25")
     # bold
-    style1 = "font: bold on"
-    style = xlwt.easyxf(style1)
+    b = xlwt.easyxf("font: bold on")
+    # bold and size
+    title = xlwt.easyxf("font: height 300; align: horiz center")
+    # grey
+    g = xlwt.easyxf("pattern: pattern solid, fore_colour grey25; align: horiz left")
+
+    # date
+    today = str(date.today())
 
     # first lines
-    sheet1.write(0, 0, 'Listado General de Asociados', style=style)
-    sheet1.write(1, 0, 'No.', style=style)
+    sheet1.write_merge(1, 1, 0, 5, 'Listado General de Asociados', style=title)
+    sheet1.write_merge(3, 3, 0, 1, 'Fecha:', style=b)
+    sheet1.write(3, 2, today, style=b)
+    sheet1.write(5, 0, 'No.', style=bg)
+
     widths(sheet1)
 
     # preparing fields for query
@@ -81,31 +97,32 @@ def writeData(fileName, columnNames, fields):
 
     # column names
     for i in range(len(columnNames)):
-        sheet1.write(1, i + 1, columnNames[i], style=style)
+        sheet1.write(5, i + 1, columnNames[i], style=bg)
     # rest of data
     m, f = 0, 0
-    for i in range(len(data)):
+    dataLenght = len(data)
+    for i in range(dataLenght):
         name = mergeData([data[i][1], data[i][2], data[i][3], data[i][4]])
         address = mergeData([data[i][7], data[i][9], 'Zona', data[i][8]])
-        sheet1.write(2 + i, 0, i)
-        sheet1.write(2 + i, 1, data[i][0])
-        sheet1.write(2 + i, 2, name)
-        sheet1.write(2 + i, 3, str(data[i][5]))
-        sheet1.write(2 + i, 5, address)
+        sheet1.write(6 + i, 0, i)
+        sheet1.write(6 + i, 1, data[i][0])
+        sheet1.write(6 + i, 2, name)
+        sheet1.write(6 + i, 3, str(data[i][5]))
+        sheet1.write(6 + i, 5, address)
         if data[i][6] == 'M':
-            sheet1.write(2 + i, 4, 'Masculino')
+            sheet1.write(6 + i, 4, 'Masculino')
             m += 1
         else:
-            sheet1.write(2 + i, 4, 'Femenino')
+            sheet1.write(6 + i, 4, 'Femenino')
             f += 1
 
     # male - female counter
-    sheet1.write(1, 7, 'Asociados Femeninos', style=style)
-    sheet1.write(2, 7, 'Asociados Masculinos', style=style)
-    sheet1.write(1, 8, f)
-    sheet1.write(2, 8, m)
+    sheet1.write(dataLenght + 10, 2, 'Asociados Femeninos', style=bg)
+    sheet1.write(dataLenght + 11, 2, 'Asociados Masculinos', style=bg)
+    sheet1.write(dataLenght + 10, 3, f, style=g)
+    sheet1.write(dataLenght + 11, 3, m, style=g)
 
-    #save work
+    # save work
     master.save(fileName)
 
 

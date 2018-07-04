@@ -14,7 +14,12 @@ DBvalues = 'dbname = ' + DBName + ' user = ' + DBUser + ' password = ' + DBPass
 if DBHost:
 	DBvalues += ' host = ' + DBHost 
 
-con = pg.connect(DBvalues)
+try:
+	con = pg.connect(DBvalues)
+except Exception as e:
+	print('Unable to connect to DB: ', DBName)
+	exit()
+
 cur = con.cursor()
 
 '''
@@ -40,7 +45,12 @@ def query(location, data='*', order1=False, criterion='', order2=0):
             line += ' ORDER BY ' + criterion + ' ASC'
         else:
             line += ' ORDER BY ' + criterion + ' DESC'
-    cur.execute(line)
+    try:
+    	cur.execute(line)
+    except Exception as e:
+    	print('Unable to run query')
+    	exit()
+    
     search = cur.fetchall()
     return search
 
