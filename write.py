@@ -58,8 +58,13 @@ sample:
 '''
 
 
-def writeData(fileName, columnNames, fields):
+def writeData(fileName, columnNames, fields, orderCriterion='', order2=''):
     genfield = ''
+
+    if orderCriterion != '':
+    	if orderCriterion not in fields:
+    		print('\n Error: ', orderCriterion, 'not in query fields\n')
+    		exit()
     # excel workbook and sheet
     master = xlwt.Workbook()
     sheet1 = master.add_sheet('Report')
@@ -73,7 +78,8 @@ def writeData(fileName, columnNames, fields):
     # bold and size
     title = xlwt.easyxf("font: height 300; align: horiz center")
     # grey
-    g = xlwt.easyxf("pattern: pattern solid, fore_colour grey25; align: horiz left")
+    g = xlwt.easyxf(
+        "pattern: pattern solid, fore_colour grey25; align: horiz left")
 
     # date
     today = str(date.today())
@@ -92,8 +98,16 @@ def writeData(fileName, columnNames, fields):
             genfield += fields[i] + ', '
         else:
             genfield += fields[i]
+
     # query
-    data = db.query('"SVC".asociados', genfield)
+    if orderCriterion:
+        if order2:
+            data = db.query('"SVC".asociados', genfield,
+                            True, orderCriterion, order2)
+        else:
+            data = db.query('"SVC".asociados', genfield, True, orderCriterion)
+    else:
+        data = db.query('"SVC".asociados', genfield)
 
     # column names
     for i in range(len(columnNames)):
@@ -124,7 +138,3 @@ def writeData(fileName, columnNames, fields):
 
     # save work
     master.save(fileName)
-
-
-writeData('reporte.xls', ['Codigo', 'Nombre', 'DPI', 'Sexo', 'Direccion'],
-          ['id_asociado_id', 'primer_nombre', 'segundo_nombre', 'apellido_paterno', 'apellido_materno', 'dpi', 'sexo', 'direccion', 'zona', 'barrio'])
