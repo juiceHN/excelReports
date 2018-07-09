@@ -6,12 +6,8 @@ from datetime import date
 '''
 DB connection
 '''
-DBName = 'db1'
-DBUser = 'postgresii'
-DBPass = 'a1'
-DBHost = ''
 
-connection = db.DBConnect(DBName, DBUser, DBPass, DBHost)
+connection = db.DBConnect()
 
 cur = connection.cursor()
 
@@ -177,6 +173,8 @@ writeData(0, 't1.xls', ['Codigo', 'Nombre', 'DPI', 'Sexo', 'Direccion'],
 
 '''
 
+col_headers = ['Codigo', 'Nombre', 'DPI', 'Sexo', 'Direccion']
+col_names   = ['id_asociado_id', 'full_name', 'dpi', 'full_sexo', 'full_direccion', 'apellido_paterno']
 if __name__ == "__main__":
     arguments = len(sys.argv)
     if arguments == 5:
@@ -184,18 +182,17 @@ if __name__ == "__main__":
         filename = sys.argv[2]
         orderCriteria = sys.argv[3]
         order2 = int(sys.argv[4])
-        writeData(location, filename, ['Codigo', 'Nombre', 'DPI', 'Sexo', 'Direccion'],
-                        ['id_asociado_id', 'full_name', 'dpi', 'full_sexo', 'full_direccion', 'apellido_paterno'], orderCriteria, order2)
+        writeData(location, filename, col_headers, col_names, orderCriteria, order2)
     elif arguments == 4:
         location = sys.argv[1]
         filename = sys.argv[2]
         orderCriteria = sys.argv[3]
-        writeData(location, filename, ['Codigo', 'Nombre', 'DPI', 'Sexo', 'Direccion'],
-                        ['id_asociado_id', 'full_name', 'dpi', 'full_sexo', 'full_direccion', 'apellido_paterno'], orderCriteria)
+        writeData(location, filename, col_headers, col_names, orderCriteria)
     elif arguments == 3:
         location = sys.argv[1]
         filename = sys.argv[2]
-        writeData(location, filename, ['Codigo', 'Nombre', 'DPI', 'Sexo', 'Direccion'],
-                        ['id_asociado_id', 'full_name', 'dpi', 'full_sexo', 'full_direccion', 'apellido_paterno'])
+        writeData(location, filename, col_headers, col_names)
     else:
-        exit()
+        exit(2)
+
+exit(0)
