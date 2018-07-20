@@ -7,29 +7,41 @@ from datetime import date
 '''
 DB connection
 '''
-'''
+
 connection = db.DBConnect()
 
 cur = connection.cursor()
 
 
 
-def query(location, data='*', order1=False, criterion='', order2=0):
-    line = 'SELECT ' + data + ' FROM ' + location
-    if order1:
-        if order2 == 0:
-            line += ' ORDER BY ' + criterion + ' ASC'
-        else:
-            line += ' ORDER BY ' + criterion + ' DESC'
+def query(lowerLimit, higherLimit):
     try:
-        cur.execute(line)
+        queryToExc= str('SELECT saldos_ahorro.tipo_cuenta,'
+    'saldos_ahorro.correl_cuenta,  '
+    'cuentas_ahorro.fecha_apertura,'
+    'asociados.primer_nombre,'
+    'asociados.segundo_nombre,'
+    'asociados.apellido_paterno,'
+    'asociados.apellido_materno,'
+    'saldos_ahorro.saldo_inicial,' 
+    'saldos_ahorro.intereses_proyectados, saldos_ahorro.intereses_finales, saldos_ahorro.ingresos_programados, saldos_ahorro.ingresos_adicionales, '
+    'saldos_ahorro.egresos, saldos_ahorro.auxilio_postumo, saldos_ahorro.isr, saldos_ahorro.saldo_final'
+    ' FROM "SVC".saldos_ahorro, "SVC".cuentas_ahorro, "SVC".asociados'
+    ' WHERE asociados.id_asociado_id = cuentas_ahorro.asociado_id'
+    ' AND cuentas_ahorro.asociado_id = saldos_ahorro.asociado_id'
+    ' AND cuentas_ahorro.tipo_cuenta = saldos_ahorro.tipo_cuenta'
+    ' AND cuentas_ahorro.correl_cuenta = saldos_ahorro.correl_cuenta'
+    ' AND saldos_ahorro.mes_saldo >' + lowerLimit+ ' AND  saldos_ahorro.mes_saldo < '+ higherLimit +' ;')
+        print queryToExc
+        cur.execute(queryToExc)
     except Exception as e:
+        print 'FUCK'
         exit(1)
         #raise e
 
     search = cur.fetchall()
     return search
-'''
+
 
 
 def widths(sheet):
@@ -77,11 +89,9 @@ def readJSON(fileName):
 '''
 
 
-def writeData(tableName, fileName, columnNames):
-    genfield = ''
-    tableName = '"SVC".' + tableName
-    # showError = readJSON('config.json')
-
+def writeData(lowerLimit, higherLimit):
+   # showError = readJSON('config.json')
+    print 'ehhd'
     # excel workbook and sheet
     master = xlwt.Workbook()
     sheet1 = master.add_sheet('Report')
@@ -110,13 +120,33 @@ def writeData(tableName, fileName, columnNames):
     widths(sheet1)
 
     # column names
-
+    columnNames = ['Cuenta', 'Fecha Apertura', 'Usuario', 'Saldo Inicial', 'Ingresos', 'Ingresos Adicionales',
+              'Egresos', 'Interes Proyectado', 'Auxilio Postumo', 'Interes Pagado', 'ISR Pagado', 'Saldo Final']
+    
     for i in range(len(columnNames)):
         sheet1.write(5, i + 1, columnNames[i], style=bg)
-
+    
     # data
+    
+    data = query(lowerLimit, higherLimit)
+    m, f = 0, 0
+    dataLenght = len(data)
+    print str(dataLenght)
+    for i in range(dataLenght):
+        print data[i]
+        sheet1.write(6 + i, 0, i)
+        sheet1.write(6 + i, 1, data[i][0])
+        sheet1.write(6 + i, 2, data[i][1])
 
-    master.save(fileName)
-titles = ['Cuenta', 'Fecha Apertura', 'Usuario', 'Saldo Inicial', 'Ingresos', 'Ingresos Adicionales',
-          'Egresos', 'Interes Proyectado', 'Auxilio Postumo', 'Interes Pagado', 'ISR Pagado', 'Saldo Final']
-writeData('a', 'test.xls', titles)
+    master.save('reporteCuentas12.xls')
+
+if __name__ == "__main__":
+    arguments = len(sys.argv)
+    if arguments == 3:
+        lowerLimit = sys.argv[1]
+        higherLimit = sys.argv[2]
+        writeData(lowerLimit, higherLimit)
+    else:
+        exit(2)
+
+exit(0)
