@@ -2,6 +2,7 @@ import xlwt
 import sys
 import json
 import DBManage as db
+import calendar
 from datetime import date
 
 '''
@@ -32,7 +33,6 @@ def query(lowerLimit, higherLimit):
     ' AND cuentas_ahorro.tipo_cuenta = saldos_ahorro.tipo_cuenta'
     ' AND cuentas_ahorro.correl_cuenta = saldos_ahorro.correl_cuenta'
     ' AND saldos_ahorro.mes_saldo >' + lowerLimit+ ' AND  saldos_ahorro.mes_saldo < '+ higherLimit +' ;')
-        print queryToExc
         cur.execute(queryToExc)
     except Exception as e:
         print 'FUCK'
@@ -91,7 +91,6 @@ def readJSON(fileName):
 
 def writeData(lowerLimit, higherLimit):
    # showError = readJSON('config.json')
-    print 'ehhd'
     # excel workbook and sheet
     master = xlwt.Workbook()
     sheet1 = master.add_sheet('Report')
@@ -111,11 +110,16 @@ def writeData(lowerLimit, higherLimit):
     # date
     today = str(date.today())
 
-    # first lines
+    # first linesssssss
     sheet1.write_merge(
-        1, 1, 0, 11, 'Listado General de Asociados', style=title)
+        1, 1, 0, 11, 'Reporte de Cuentas de Ahorro', style=title)
     sheet1.write_merge(3, 3, 0, 1, 'Periodo:', style=b)
-    sheet1.write(3, 2, today, style=b)
+
+    #sheet1.write(3, 2, today, style=b)
+    #str(int(higherLimit[4:6]))
+    print type(higherLimit[:4])
+    sheet1.write(3, 2, str(lowerLimit)[:4] +'-'+str(lowerLimit)[4:6] + '-01 / ' 
+        + str(higherLimit)[:4]+ '-' + str(higherLimit)[4:6] + '-' + str(calendar.monthrange(int(higherLimit[:4]),int(higherLimit[4:6])) [1] ), style=b)
     sheet1.write(5, 0, 'No.', style=bg)
     widths(sheet1)
 
@@ -129,16 +133,48 @@ def writeData(lowerLimit, higherLimit):
     # data
     
     data = query(lowerLimit, higherLimit)
-    m, f = 0, 0
+    si, ing, ia, e, ip, ap, ipa, isrp, sf = 0,0,0,0,0,0,0,0,0
     dataLenght = len(data)
     print str(dataLenght)
     for i in range(dataLenght):
-        print data[i]
-        sheet1.write(6 + i, 0, i)
-        sheet1.write(6 + i, 1, data[i][0])
-        sheet1.write(6 + i, 2, data[i][1])
+        sheet1.write(6 + i, 0, i+1)
+        sheet1.write(6 + i, 1, str(data[i][0]) + '-' +  str(data[i][1]))
+        sheet1.write(6 + i, 2, str(data[i][2]))
+        #full_name = (data[i][3] + ' '  + data[i][4] + ' '  +data[i][5] + ' '  +data[i][6] )
+        sheet1.write(6 + i, 3, (data[i][3] + ' '  + data[i][4] + ' '  +data[i][5] + ' '  +data[i][6] ).decode('utf8'))
+        si += data[i][7]
+        sheet1.write(6 + i, 4, data[i][7])
+        ing += data[i][8]
+        sheet1.write(6 + i, 5, data[i][8])
+        ia += data[i][9]
+        sheet1.write(6 + i, 6, data[i][9])
+        e +=  data[i][10]
+        sheet1.write(6 + i, 7, data[i][10])
+        ip += data[i][11]
+        sheet1.write(6 + i, 8, data[i][11])
+        ap += data[i][12]
+        sheet1.write(6 + i, 9, data[i][12])
+        ipa += data[i][13]
+        sheet1.write(6 + i, 10, data[i][13])
+        isrp += data[i][14]
+        sheet1.write(6 + i, 11, data[i][14])
+        sf += data[i][15]
+        sheet1.write(6 + i, 12, data[i][15])
+    sheet1.write(6+dataLenght, 3, 'Totales' , style=bg);
+    sheet1.write(6+dataLenght, 4, si, style=bg );
+    sheet1.write(6+dataLenght, 5, ing,style=bg );
+    sheet1.write(6+dataLenght, 6, ia, style=bg );
+    sheet1.write(6+dataLenght, 7, e,style=bg );
+    sheet1.write(6+dataLenght, 8, ip,style=bg );
+    sheet1.write(6+dataLenght, 9, ap,style=bg );
+    sheet1.write(6+dataLenght, 10, ipa,style=bg );
+    sheet1.write(6+dataLenght, 11, isrp,style=bg );
+    sheet1.write(6+dataLenght, 12, sf,style=bg );
 
+
+    print 'bef'
     master.save('reporteCuentas12.xls')
+    print 'aft'
 
 if __name__ == "__main__":
     arguments = len(sys.argv)
