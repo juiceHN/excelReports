@@ -1,0 +1,2032 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.8.0_05" class="java.beans.XMLDecoder">
+ <array class="com.iscobol.screenpainter.beans.AbstractBeanWindow" length="1">
+  <void index="0">
+   <object class="com.iscobol.screenpainter.beans.swing.SwingWindow" id="SwingWindow0">
+    <void property="components">
+     <array class="com.iscobol.screenpainter.beans.AbstractBeanControl" length="1">
+      <void index="0">
+       <object class="com.iscobol.screenpainter.beans.swing.SwingTab">
+        <void property="column">
+         <string>3.4</string>
+        </void>
+        <void property="columnPixels">
+         <float>25.0</float>
+        </void>
+        <void property="id">
+         <int>1</int>
+        </void>
+        <void property="line">
+         <string>2.4</string>
+        </void>
+        <void property="linePixels">
+         <float>15.0</float>
+        </void>
+        <void property="lines">
+         <float>57.9</float>
+        </void>
+        <void property="linesPixels">
+         <float>579.0</float>
+        </void>
+        <void property="name">
+         <string>screen-1-tc-1</string>
+        </void>
+        <void property="pages">
+         <array class="com.iscobol.screenpainter.beans.TabPage" length="2">
+          <void index="0">
+           <object class="com.iscobol.screenpainter.beans.TabPage">
+            <string>Datos Generales</string>
+            <void property="components">
+             <array class="com.iscobol.screenpainter.beans.AbstractBeanControl" length="41">
+              <void index="0">
+               <object class="com.iscobol.screenpainter.beans.swing.SwingLabel">
+                <void property="column">
+                 <string>2.9</string>
+                </void>
+                <void property="columnPixels">
+                 <float>20.0</float>
+                </void>
+                <void property="id">
+                 <int>2</int>
+                </void>
+                <void property="line">
+                 <string>3.6</string>
+                </void>
+                <void property="linePixels">
+                 <float>27.0</float>
+                </void>
+                <void property="lines">
+                 <float>2.4</float>
+                </void>
+                <void property="linesPixels">
+                 <float>24.0</float>
+                </void>
+                <void property="name">
+                 <string>screen-1-la-1</string>
+                </void>
+                <void property="level">
+                 <int>5</int>
+                </void>
+                <void property="size">
+                 <float>8.5</float>
+                </void>
+                <void property="sizePixels">
+                 <float>85.0</float>
+                </void>
+                <void property="tabOrder">
+                 <int>1</int>
+                </void>
+                <void property="title">
+                 <string>Asociado:</string>
+                </void>
+               </object>
+              </void>
+              <void index="1">
+               <object class="com.iscobol.screenpainter.beans.swing.SwingEntryField" id="SwingEntryField0">
+                <void property="column">
+                 <string>16.3</string>
+                </void>
+                <void property="columnPixels">
+                 <float>154.0</float>
+                </void>
+                <void property="id">
+                 <int>3</int>
+                </void>
+                <void property="line">
+                 <string>3.9</string>
+                </void>
+                <void property="linePixels">
+                 <float>30.0</float>
+                </void>
+                <void property="lines">
+                 <float>2.4</float>
+                </void>
+                <void property="linesPixels">
+                 <float>24.0</float>
+                </void>
+                <void property="name">
+                 <string>screen-1-ef-1</string>
+                </void>
+                <void id="ItemSettingList0" property="proposal">
+                 <void id="SettingItemArray0" property="settings"/>
+                 <void property="settings">
+                  <object idref="SettingItemArray0"/>
+                 </void>
+                </void>
+                <void property="level">
+                 <int>5</int>
+                </void>
+                <void property="size">
+                 <float>12.6</float>
+                </void>
+                <void property="sizePixels">
+                 <float>126.0</float>
+                </void>
+                <void property="tabOrder">
+                 <int>2</int>
+                </void>
+               </object>
+              </void>
+              <void index="2">
+               <object class="com.iscobol.screenpainter.beans.swing.SwingLabel">
+                <void property="column">
+                 <string>2.9</string>
+                </void>
+                <void property="columnPixels">
+                 <float>20.0</float>
+                </void>
+                <void property="id">
+                 <int>4</int>
+                </void>
+                <void property="line">
+                 <string>7.6</string>
+                </void>
+                <void property="linePixels">
+                 <float>67.0</float>
+                </void>
+                <void property="lines">
+                 <float>2.9</float>
+                </void>
+                <void property="linesPixels">
+                 <float>29.0</float>
+                </void>
+                <void property="name">
+                 <string>screen-1-la-2</string>
+                </void>
+                <void property="level">
+                 <int>5</int>
+                </void>
+                <void property="size">
+                 <float>12.1</float>
+                </void>
+                <void property="sizePixels">
+                 <float>121.0</float>
+                </void>
+                <void property="tabOrder">
+                 <int>3</int>
+                </void>
+                <void property="title">
+                 <string>Codigo Credito:</string>
+                </void>
+               </object>
+              </void>
+              <void index="3">
+               <object class="com.iscobol.screenpainter.beans.swing.SwingEntryField" id="SwingEntryField1">
+                <void property="column">
+                 <string>16.3</string>
+                </void>
+                <void property="columnPixels">
+                 <float>154.0</float>
+                </void>
+                <void property="id">
+                 <int>5</int>
+                </void>
+                <void property="line">
+                 <string>7.6</string>
+                </void>
+                <void property="linePixels">
+                 <float>67.0</float>
+                </void>
+                <void property="lines">
+                 <float>2.4</float>
+                </void>
+                <void property="linesPixels">
+                 <float>24.0</float>
+                </void>
+                <void property="name">
+                 <string>screen-1-ef-2</string>
+                </void>
+                <void id="ItemSettingList1" property="proposal">
+                 <void id="SettingItemArray1" property="settings"/>
+                 <void property="settings">
+                  <object idref="SettingItemArray1"/>
+                 </void>
+                </void>
+                <void property="level">
+                 <int>5</int>
+                </void>
+                <void property="size">
+                 <float>12.6</float>
+                </void>
+                <void property="sizePixels">
+                 <float>126.0</float>
+                </void>
+                <void property="tabOrder">
+                 <int>4</int>
+                </void>
+               </object>
+              </void>
+              <void index="4">
+               <object class="com.iscobol.screenpainter.beans.swing.SwingLabel">
+                <void property="column">
+                 <string>2.8</string>
+                </void>
+                <void property="columnPixels">
+                 <float>19.0</float>
+                </void>
+                <void property="id">
+                 <int>6</int>
+                </void>
+                <void property="line">
+                 <string>11.7</string>
+                </void>
+                <void property="linePixels">
+                 <float>108.0</float>
+                </void>
+                <void property="lines">
+                 <float>2.4</float>
+                </void>
+                <void property="linesPixels">
+                 <float>24.0</float>
+                </void>
+                <void property="name">
+                 <string>screen-1-la-3</string>
+                </void>
+                <void property="level">
+                 <int>5</int>
+                </void>
+                <void property="size">
+                 <float>12.2</float>
+                </void>
+                <void property="sizePixels">
+                 <float>122.0</float>
+                </void>
+                <void property="tabOrder">
+                 <int>5</int>
+                </void>
+                <void property="title">
+                 <string>Fondo Credito:</string>
+                </void>
+               </object>
+              </void>
+              <void index="5">
+               <object class="com.iscobol.screenpainter.beans.swing.SwingLabel">
+                <void property="column">
+                 <string>2.4</string>
+                </void>
+                <void property="columnPixels">
+                 <float>15.0</float>
+                </void>
+                <void property="id">
+                 <int>7</int>
+                </void>
+                <void property="line">
+                 <string>15.1</string>
+                </void>
+                <void property="linePixels">
+                 <float>142.0</float>
+                </void>
+                <void property="lines">
+                 <float>2.9</float>
+                </void>
+                <void property="linesPixels">
+                 <float>29.0</float>
+                </void>
+                <void property="name">
+                 <string>screen-1-la-4</string>
+                </void>
+                <void property="level">
+                 <int>5</int>
+                </void>
+                <void property="size">
+                 <float>12.1</float>
+                </void>
+                <void property="sizePixels">
+                 <float>121.0</float>
+                </void>
+                <void property="tabOrder">
+                 <int>6</int>
+                </void>
+                <void property="title">
+                 <string>Sector Credito:</string>
+                </void>
+               </object>
+              </void>
+              <void index="6">
+               <object class="com.iscobol.screenpainter.beans.swing.SwingComboBox" id="SwingComboBox0">
+                <void property="column">
+                 <string>16.3</string>
+                </void>
+                <void property="columnPixels">
+                 <float>154.0</float>
+                </void>
+                <void property="id">
+                 <int>8</int>
+                </void>
+                <void id="ComboItemSettingList0" property="itemToAdd">
+                 <void id="SettingItemArray2" property="settings"/>
+                 <void property="settings">
+                  <object idref="SettingItemArray2"/>
+                 </void>
+                </void>
+                <void property="line">
+                 <string>11.7</string>
+                </void>
+                <void property="linePixels">
+                 <float>108.0</float>
+                </void>
+                <void property="lines">
+                 <float>2.4</float>
+                </void>
+                <void property="linesPixels">
+                 <float>24.0</float>
+                </void>
+                <void property="name">
+                 <string>screen-1-co-1</string>
+                </void>
+                <void property="level">
+                 <int>5</int>
+                </void>
+                <void property="size">
+                 <float>12.6</float>
+                </void>
+                <void property="sizePixels">
+                 <float>126.0</float>
+                </void>
+                <void property="tabOrder">
+                 <int>7</int>
+                </void>
+               </object>
+              </void>
+              <void index="7">
+               <object class="com.iscobol.screenpainter.beans.swing.SwingComboBox" id="SwingComboBox1">
+                <void property="column">
+                 <string>16.3</string>
+                </void>
+                <void property="columnPixels">
+                 <float>154.0</float>
+                </void>
+                <void property="id">
+                 <int>9</int>
+                </void>
+                <void id="ComboItemSettingList1" property="itemToAdd">
+                 <void id="SettingItemArray3" property="settings"/>
+                 <void property="settings">
+                  <object idref="SettingItemArray3"/>
+                 </void>
+                </void>
+                <void property="line">
+                 <string>15.1</string>
+                </void>
+                <void property="linePixels">
+                 <float>142.0</float>
+                </void>
+                <void property="lines">
+                 <float>2.1</float>
+                </void>
+                <void property="linesPixels">
+                 <float>21.0</float>
+                </void>
+                <void property="name">
+                 <string>screen-1-co-2</string>
+                </void>
+                <void property="level">
+                 <int>5</int>
+                </void>
+                <void property="size">
+                 <float>12.6</float>
+                </void>
+                <void property="sizePixels">
+                 <float>126.0</float>
+                </void>
+                <void property="tabOrder">
+                 <int>8</int>
+                </void>
+               </object>
+              </void>
+              <void index="8">
+               <object class="com.iscobol.screenpainter.beans.swing.SwingLabel">
+                <void property="column">
+                 <string>2.4</string>
+                </void>
+                <void property="columnPixels">
+                 <float>15.0</float>
+                </void>
+                <void property="id">
+                 <int>10</int>
+                </void>
+                <void property="line">
+                 <string>17.9</string>
+                </void>
+                <void property="linePixels">
+                 <float>170.0</float>
+                </void>
+                <void property="lines">
+                 <float>2.9</float>
+                </void>
+                <void property="linesPixels">
+                 <float>29.0</float>
+                </void>
+                <void property="name">
+                 <string>screen-1-la-5</string>
+                </void>
+                <void property="level">
+                 <int>5</int>
+                </void>
+                <void property="size">
+                 <float>12.1</float>
+                </void>
+                <void property="sizePixels">
+                 <float>121.0</float>
+                </void>
+                <void property="tabOrder">
+                 <int>9</int>
+                </void>
+                <void property="title">
+                 <string>Poloticá Credito:</string>
+                </void>
+               </object>
+              </void>
+              <void index="9">
+               <object class="com.iscobol.screenpainter.beans.swing.SwingComboBox" id="SwingComboBox2">
+                <void property="column">
+                 <string>16.3</string>
+                </void>
+                <void property="columnPixels">
+                 <float>154.0</float>
+                </void>
+                <void property="id">
+                 <int>11</int>
+                </void>
+                <void id="ComboItemSettingList2" property="itemToAdd">
+                 <void id="SettingItemArray4" property="settings"/>
+                 <void property="settings">
+                  <object idref="SettingItemArray4"/>
+                 </void>
+                </void>
+                <void property="line">
+                 <string>17.9</string>
+                </void>
+                <void property="linePixels">
+                 <float>170.0</float>
+                </void>
+                <void property="lines">
+                 <float>2.1</float>
+                </void>
+                <void property="linesPixels">
+                 <float>21.0</float>
+                </void>
+                <void property="name">
+                 <string>screen-1-co-3</string>
+                </void>
+                <void property="level">
+                 <int>5</int>
+                </void>
+                <void property="size">
+                 <float>12.6</float>
+                </void>
+                <void property="sizePixels">
+                 <float>126.0</float>
+                </void>
+                <void property="tabOrder">
+                 <int>10</int>
+                </void>
+               </object>
+              </void>
+              <void index="10">
+               <object class="com.iscobol.screenpainter.beans.swing.SwingLabel">
+                <void property="column">
+                 <string>2.4</string>
+                </void>
+                <void property="columnPixels">
+                 <float>15.0</float>
+                </void>
+                <void property="id">
+                 <int>12</int>
+                </void>
+                <void property="line">
+                 <string>24.8</string>
+                </void>
+                <void property="linePixels">
+                 <float>239.0</float>
+                </void>
+                <void property="lines">
+                 <float>2.9</float>
+                </void>
+                <void property="linesPixels">
+                 <float>29.0</float>
+                </void>
+                <void property="name">
+                 <string>screen-1-la-6</string>
+                </void>
+                <void property="level">
+                 <int>5</int>
+                </void>
+                <void property="size">
+                 <float>12.1</float>
+                </void>
+                <void property="sizePixels">
+                 <float>121.0</float>
+                </void>
+                <void property="tabOrder">
+                 <int>11</int>
+                </void>
+                <void property="title">
+                 <string>Fecha Aprobacion:</string>
+                </void>
+               </object>
+              </void>
+              <void index="11">
+               <object class="com.iscobol.screenpainter.beans.swing.SwingLabel">
+                <void property="column">
+                 <string>2.3</string>
+                </void>
+                <void property="columnPixels">
+                 <float>14.0</float>
+                </void>
+                <void property="id">
+                 <int>13</int>
+                </void>
+                <void property="line">
+                 <string>21.5</string>
+                </void>
+                <void property="linePixels">
+                 <float>206.0</float>
+                </void>
+                <void property="lines">
+                 <float>2.4</float>
+                </void>
+                <void property="linesPixels">
+                 <float>24.0</float>
+                </void>
+                <void property="name">
+                 <string>screen-1-la-7</string>
+                </void>
+                <void property="level">
+                 <int>5</int>
+                </void>
+                <void property="size">
+                 <float>12.2</float>
+                </void>
+                <void property="sizePixels">
+                 <float>122.0</float>
+                </void>
+                <void property="tabOrder">
+                 <int>12</int>
+                </void>
+                <void property="title">
+                 <string>Fecha Solicitud:</string>
+                </void>
+               </object>
+              </void>
+              <void index="12">
+               <object class="com.iscobol.screenpainter.beans.swing.SwingLabel">
+                <void property="column">
+                 <string>2.4</string>
+                </void>
+                <void property="columnPixels">
+                 <float>15.0</float>
+                </void>
+                <void property="id">
+                 <int>14</int>
+                </void>
+                <void property="line">
+                 <string>27.9</string>
+                </void>
+                <void property="linePixels">
+                 <float>270.0</float>
+                </void>
+                <void property="lines">
+                 <float>2.9</float>
+                </void>
+                <void property="linesPixels">
+                 <float>29.0</float>
+                </void>
+                <void property="name">
+                 <string>screen-1-la-8</string>
+                </void>
+                <void property="level">
+                 <int>5</int>
+                </void>
+                <void property="size">
+                 <float>12.1</float>
+                </void>
+                <void property="sizePixels">
+                 <float>121.0</float>
+                </void>
+                <void property="tabOrder">
+                 <int>13</int>
+                </void>
+                <void property="title">
+                 <string>Fecha Entrega:</string>
+                </void>
+               </object>
+              </void>
+              <void index="13">
+               <object class="com.iscobol.screenpainter.beans.swing.SwingDateEntry">
+                <void property="column">
+                 <string>16.3</string>
+                </void>
+                <void property="columnPixels">
+                 <float>154.0</float>
+                </void>
+                <void property="id">
+                 <int>15</int>
+                </void>
+                <void property="line">
+                 <string>21.5</string>
+                </void>
+                <void property="linePixels">
+                 <float>206.0</float>
+                </void>
+                <void property="lines">
+                 <float>2.4</float>
+                </void>
+                <void property="linesPixels">
+                 <float>24.0</float>
+                </void>
+                <void property="name">
+                 <string>screen-1-de-1</string>
+                </void>
+                <void property="level">
+                 <int>5</int>
+                </void>
+                <void property="size">
+                 <float>12.6</float>
+                </void>
+                <void property="sizePixels">
+                 <float>126.0</float>
+                </void>
+                <void property="tabOrder">
+                 <int>14</int>
+                </void>
+               </object>
+              </void>
+              <void index="14">
+               <object class="com.iscobol.screenpainter.beans.swing.SwingDateEntry">
+                <void property="column">
+                 <string>16.3</string>
+                </void>
+                <void property="columnPixels">
+                 <float>154.0</float>
+                </void>
+                <void property="id">
+                 <int>16</int>
+                </void>
+                <void property="line">
+                 <string>24.8</string>
+                </void>
+                <void property="linePixels">
+                 <float>239.0</float>
+                </void>
+                <void property="lines">
+                 <float>2.4</float>
+                </void>
+                <void property="linesPixels">
+                 <float>24.0</float>
+                </void>
+                <void property="name">
+                 <string>screen-1-de-2</string>
+                </void>
+                <void property="level">
+                 <int>5</int>
+                </void>
+                <void property="size">
+                 <float>12.6</float>
+                </void>
+                <void property="sizePixels">
+                 <float>126.0</float>
+                </void>
+                <void property="tabOrder">
+                 <int>15</int>
+                </void>
+               </object>
+              </void>
+              <void index="15">
+               <object class="com.iscobol.screenpainter.beans.swing.SwingDateEntry">
+                <void property="column">
+                 <string>16.3</string>
+                </void>
+                <void property="columnPixels">
+                 <float>154.0</float>
+                </void>
+                <void property="id">
+                 <int>17</int>
+                </void>
+                <void property="line">
+                 <string>27.9</string>
+                </void>
+                <void property="linePixels">
+                 <float>270.0</float>
+                </void>
+                <void property="lines">
+                 <float>2.4</float>
+                </void>
+                <void property="linesPixels">
+                 <float>24.0</float>
+                </void>
+                <void property="name">
+                 <string>screen-1-de-3</string>
+                </void>
+                <void property="level">
+                 <int>5</int>
+                </void>
+                <void property="size">
+                 <float>12.6</float>
+                </void>
+                <void property="sizePixels">
+                 <float>126.0</float>
+                </void>
+                <void property="tabOrder">
+                 <int>16</int>
+                </void>
+               </object>
+              </void>
+              <void index="16">
+               <object class="com.iscobol.screenpainter.beans.swing.SwingLabel">
+                <void property="column">
+                 <string>2.5</string>
+                </void>
+                <void property="columnPixels">
+                 <float>16.0</float>
+                </void>
+                <void property="id">
+                 <int>18</int>
+                </void>
+                <void property="line">
+                 <string>31.5</string>
+                </void>
+                <void property="linePixels">
+                 <float>306.0</float>
+                </void>
+                <void property="lines">
+                 <float>2.4</float>
+                </void>
+                <void property="linesPixels">
+                 <float>24.0</float>
+                </void>
+                <void property="name">
+                 <string>screen-1-la-9</string>
+                </void>
+                <void property="level">
+                 <int>5</int>
+                </void>
+                <void property="size">
+                 <float>12.2</float>
+                </void>
+                <void property="sizePixels">
+                 <float>122.0</float>
+                </void>
+                <void property="tabOrder">
+                 <int>17</int>
+                </void>
+                <void property="title">
+                 <string>Moneda:</string>
+                </void>
+               </object>
+              </void>
+              <void index="17">
+               <object class="com.iscobol.screenpainter.beans.swing.SwingComboBox" id="SwingComboBox3">
+                <void property="column">
+                 <string>16.4</string>
+                </void>
+                <void property="columnPixels">
+                 <float>155.0</float>
+                </void>
+                <void property="id">
+                 <int>19</int>
+                </void>
+                <void id="ComboItemSettingList3" property="itemToAdd">
+                 <void id="SettingItemArray5" property="settings"/>
+                 <void property="settings">
+                  <object idref="SettingItemArray5"/>
+                 </void>
+                </void>
+                <void property="line">
+                 <string>31.5</string>
+                </void>
+                <void property="linePixels">
+                 <float>306.0</float>
+                </void>
+                <void property="lines">
+                 <float>2.1</float>
+                </void>
+                <void property="linesPixels">
+                 <float>21.0</float>
+                </void>
+                <void property="name">
+                 <string>screen-1-co-4</string>
+                </void>
+                <void property="level">
+                 <int>5</int>
+                </void>
+                <void property="size">
+                 <float>12.6</float>
+                </void>
+                <void property="sizePixels">
+                 <float>126.0</float>
+                </void>
+                <void property="tabOrder">
+                 <int>18</int>
+                </void>
+               </object>
+              </void>
+              <void index="18">
+               <object class="com.iscobol.screenpainter.beans.swing.SwingLabel">
+                <void property="column">
+                 <string>2.4</string>
+                </void>
+                <void property="columnPixels">
+                 <float>15.0</float>
+                </void>
+                <void property="id">
+                 <int>20</int>
+                </void>
+                <void property="line">
+                 <string>34.5</string>
+                </void>
+                <void property="linePixels">
+                 <float>336.0</float>
+                </void>
+                <void property="lines">
+                 <float>2.4</float>
+                </void>
+                <void property="linesPixels">
+                 <float>24.0</float>
+                </void>
+                <void property="name">
+                 <string>screen-1-la-10</string>
+                </void>
+                <void property="level">
+                 <int>5</int>
+                </void>
+                <void property="size">
+                 <float>8.5</float>
+                </void>
+                <void property="sizePixels">
+                 <float>85.0</float>
+                </void>
+                <void property="tabOrder">
+                 <int>19</int>
+                </void>
+                <void property="title">
+                 <string>Plazo Crédito:</string>
+                </void>
+               </object>
+              </void>
+              <void index="19">
+               <object class="com.iscobol.screenpainter.beans.swing.SwingEntryField" id="SwingEntryField2">
+                <void property="column">
+                 <string>16.4</string>
+                </void>
+                <void property="columnPixels">
+                 <float>155.0</float>
+                </void>
+                <void property="id">
+                 <int>21</int>
+                </void>
+                <void property="line">
+                 <string>34.5</string>
+                </void>
+                <void property="linePixels">
+                 <float>336.0</float>
+                </void>
+                <void property="lines">
+                 <float>2.4</float>
+                </void>
+                <void property="linesPixels">
+                 <float>24.0</float>
+                </void>
+                <void property="name">
+                 <string>screen-1-ef-3</string>
+                </void>
+                <void id="ItemSettingList2" property="proposal">
+                 <void id="SettingItemArray6" property="settings"/>
+                 <void property="settings">
+                  <object idref="SettingItemArray6"/>
+                 </void>
+                </void>
+                <void property="level">
+                 <int>5</int>
+                </void>
+                <void property="size">
+                 <float>12.6</float>
+                </void>
+                <void property="sizePixels">
+                 <float>126.0</float>
+                </void>
+                <void property="tabOrder">
+                 <int>20</int>
+                </void>
+               </object>
+              </void>
+              <void index="20">
+               <object class="com.iscobol.screenpainter.beans.swing.SwingLabel">
+                <void property="column">
+                 <string>2.4</string>
+                </void>
+                <void property="columnPixels">
+                 <float>15.0</float>
+                </void>
+                <void property="id">
+                 <int>22</int>
+                </void>
+                <void property="line">
+                 <string>38.2</string>
+                </void>
+                <void property="linePixels">
+                 <float>373.0</float>
+                </void>
+                <void property="lines">
+                 <float>2.9</float>
+                </void>
+                <void property="linesPixels">
+                 <float>29.0</float>
+                </void>
+                <void property="name">
+                 <string>screen-1-la-11</string>
+                </void>
+                <void property="level">
+                 <int>5</int>
+                </void>
+                <void property="size">
+                 <float>12.1</float>
+                </void>
+                <void property="sizePixels">
+                 <float>121.0</float>
+                </void>
+                <void property="tabOrder">
+                 <int>21</int>
+                </void>
+                <void property="title">
+                 <string>Tasa Interés:</string>
+                </void>
+               </object>
+              </void>
+              <void index="21">
+               <object class="com.iscobol.screenpainter.beans.swing.SwingEntryField" id="SwingEntryField3">
+                <void property="column">
+                 <string>16.4</string>
+                </void>
+                <void property="columnPixels">
+                 <float>155.0</float>
+                </void>
+                <void property="id">
+                 <int>23</int>
+                </void>
+                <void property="line">
+                 <string>38.2</string>
+                </void>
+                <void property="linePixels">
+                 <float>373.0</float>
+                </void>
+                <void property="lines">
+                 <float>2.4</float>
+                </void>
+                <void property="linesPixels">
+                 <float>24.0</float>
+                </void>
+                <void property="name">
+                 <string>screen-1-ef-4</string>
+                </void>
+                <void id="ItemSettingList3" property="proposal">
+                 <void id="SettingItemArray7" property="settings"/>
+                 <void property="settings">
+                  <object idref="SettingItemArray7"/>
+                 </void>
+                </void>
+                <void property="level">
+                 <int>5</int>
+                </void>
+                <void property="size">
+                 <float>12.6</float>
+                </void>
+                <void property="sizePixels">
+                 <float>126.0</float>
+                </void>
+                <void property="tabOrder">
+                 <int>22</int>
+                </void>
+               </object>
+              </void>
+              <void index="22">
+               <object class="com.iscobol.screenpainter.beans.swing.SwingLabel">
+                <void property="column">
+                 <string>2.4</string>
+                </void>
+                <void property="columnPixels">
+                 <float>15.0</float>
+                </void>
+                <void property="id">
+                 <int>24</int>
+                </void>
+                <void property="line">
+                 <string>41.5</string>
+                </void>
+                <void property="linePixels">
+                 <float>406.0</float>
+                </void>
+                <void property="lines">
+                 <float>2.4</float>
+                </void>
+                <void property="linesPixels">
+                 <float>24.0</float>
+                </void>
+                <void property="name">
+                 <string>screen-1-la-12</string>
+                </void>
+                <void property="level">
+                 <int>5</int>
+                </void>
+                <void property="size">
+                 <float>12.1</float>
+                </void>
+                <void property="sizePixels">
+                 <float>121.0</float>
+                </void>
+                <void property="tabOrder">
+                 <int>23</int>
+                </void>
+                <void property="title">
+                 <string>Monto Credito:</string>
+                </void>
+               </object>
+              </void>
+              <void index="23">
+               <object class="com.iscobol.screenpainter.beans.swing.SwingEntryField" id="SwingEntryField4">
+                <void property="column">
+                 <string>16.3</string>
+                </void>
+                <void property="columnPixels">
+                 <float>154.0</float>
+                </void>
+                <void property="id">
+                 <int>25</int>
+                </void>
+                <void property="line">
+                 <string>41.5</string>
+                </void>
+                <void property="linePixels">
+                 <float>406.0</float>
+                </void>
+                <void property="lines">
+                 <float>2.4</float>
+                </void>
+                <void property="linesPixels">
+                 <float>24.0</float>
+                </void>
+                <void property="name">
+                 <string>screen-1-ef-5</string>
+                </void>
+                <void id="ItemSettingList4" property="proposal">
+                 <void id="SettingItemArray8" property="settings"/>
+                 <void property="settings">
+                  <object idref="SettingItemArray8"/>
+                 </void>
+                </void>
+                <void property="level">
+                 <int>5</int>
+                </void>
+                <void property="size">
+                 <float>12.6</float>
+                </void>
+                <void property="sizePixels">
+                 <float>126.0</float>
+                </void>
+                <void property="tabOrder">
+                 <int>24</int>
+                </void>
+               </object>
+              </void>
+              <void index="24">
+               <object class="com.iscobol.screenpainter.beans.swing.SwingLabel">
+                <void property="column">
+                 <string>2.4</string>
+                </void>
+                <void property="columnPixels">
+                 <float>15.0</float>
+                </void>
+                <void property="id">
+                 <int>26</int>
+                </void>
+                <void property="line">
+                 <string>45.2</string>
+                </void>
+                <void property="linePixels">
+                 <float>443.0</float>
+                </void>
+                <void property="lines">
+                 <float>2.9</float>
+                </void>
+                <void property="linesPixels">
+                 <float>29.0</float>
+                </void>
+                <void property="name">
+                 <string>screen-1-la-13</string>
+                </void>
+                <void property="level">
+                 <int>5</int>
+                </void>
+                <void property="size">
+                 <float>12.1</float>
+                </void>
+                <void property="sizePixels">
+                 <float>121.0</float>
+                </void>
+                <void property="tabOrder">
+                 <int>25</int>
+                </void>
+                <void property="title">
+                 <string>Deduccion Varias:</string>
+                </void>
+               </object>
+              </void>
+              <void index="25">
+               <object class="com.iscobol.screenpainter.beans.swing.SwingEntryField" id="SwingEntryField5">
+                <void property="column">
+                 <string>16.3</string>
+                </void>
+                <void property="columnPixels">
+                 <float>154.0</float>
+                </void>
+                <void property="id">
+                 <int>27</int>
+                </void>
+                <void property="line">
+                 <string>45.2</string>
+                </void>
+                <void property="linePixels">
+                 <float>443.0</float>
+                </void>
+                <void property="lines">
+                 <float>2.4</float>
+                </void>
+                <void property="linesPixels">
+                 <float>24.0</float>
+                </void>
+                <void property="name">
+                 <string>screen-1-ef-6</string>
+                </void>
+                <void id="ItemSettingList5" property="proposal">
+                 <void id="SettingItemArray9" property="settings"/>
+                 <void property="settings">
+                  <object idref="SettingItemArray9"/>
+                 </void>
+                </void>
+                <void property="level">
+                 <int>5</int>
+                </void>
+                <void property="size">
+                 <float>12.6</float>
+                </void>
+                <void property="sizePixels">
+                 <float>126.0</float>
+                </void>
+                <void property="tabOrder">
+                 <int>26</int>
+                </void>
+               </object>
+              </void>
+              <void index="26">
+               <object class="com.iscobol.screenpainter.beans.swing.SwingEntryField" id="SwingEntryField6">
+                <void property="column">
+                 <string>16.2</string>
+                </void>
+                <void property="columnPixels">
+                 <float>153.0</float>
+                </void>
+                <void property="id">
+                 <int>28</int>
+                </void>
+                <void property="line">
+                 <string>49.1</string>
+                </void>
+                <void property="linePixels">
+                 <float>482.0</float>
+                </void>
+                <void property="lines">
+                 <float>2.4</float>
+                </void>
+                <void property="linesPixels">
+                 <float>24.0</float>
+                </void>
+                <void property="name">
+                 <string>screen-1-ef-7</string>
+                </void>
+                <void id="ItemSettingList6" property="proposal">
+                 <void id="SettingItemArray10" property="settings"/>
+                 <void property="settings">
+                  <object idref="SettingItemArray10"/>
+                 </void>
+                </void>
+                <void property="level">
+                 <int>5</int>
+                </void>
+                <void property="size">
+                 <float>12.6</float>
+                </void>
+                <void property="sizePixels">
+                 <float>126.0</float>
+                </void>
+                <void property="tabOrder">
+                 <int>27</int>
+                </void>
+               </object>
+              </void>
+              <void index="27">
+               <object class="com.iscobol.screenpainter.beans.swing.SwingLabel">
+                <void property="column">
+                 <string>2.3</string>
+                </void>
+                <void property="columnPixels">
+                 <float>14.0</float>
+                </void>
+                <void property="id">
+                 <int>29</int>
+                </void>
+                <void property="line">
+                 <string>49.1</string>
+                </void>
+                <void property="linePixels">
+                 <float>482.0</float>
+                </void>
+                <void property="lines">
+                 <float>2.9</float>
+                </void>
+                <void property="linesPixels">
+                 <float>29.0</float>
+                </void>
+                <void property="name">
+                 <string>screen-1-la-14</string>
+                </void>
+                <void property="level">
+                 <int>5</int>
+                </void>
+                <void property="size">
+                 <float>13.8</float>
+                </void>
+                <void property="sizePixels">
+                 <float>138.0</float>
+                </void>
+                <void property="tabOrder">
+                 <int>28</int>
+                </void>
+                <void property="title">
+                 <string>Total Desembolsado:</string>
+                </void>
+               </object>
+              </void>
+              <void index="28">
+               <object class="com.iscobol.screenpainter.beans.swing.SwingLabel">
+                <void property="column">
+                 <string>31.8</string>
+                </void>
+                <void property="columnPixels">
+                 <float>309.0</float>
+                </void>
+                <void property="id">
+                 <int>30</int>
+                </void>
+                <void property="line">
+                 <string>34.6</string>
+                </void>
+                <void property="linePixels">
+                 <float>337.0</float>
+                </void>
+                <void property="lines">
+                 <float>2.4</float>
+                </void>
+                <void property="linesPixels">
+                 <float>24.0</float>
+                </void>
+                <void property="name">
+                 <string>screen-1-la-15</string>
+                </void>
+                <void property="level">
+                 <int>5</int>
+                </void>
+                <void property="size">
+                 <float>13.1</float>
+                </void>
+                <void property="sizePixels">
+                 <float>131.0</float>
+                </void>
+                <void property="tabOrder">
+                 <int>29</int>
+                </void>
+                <void property="title">
+                 <string>Fecha Vencimiento:</string>
+                </void>
+               </object>
+              </void>
+              <void index="29">
+               <object class="com.iscobol.screenpainter.beans.swing.SwingLabel">
+                <void property="column">
+                 <string>31.8</string>
+                </void>
+                <void property="columnPixels">
+                 <float>309.0</float>
+                </void>
+                <void property="id">
+                 <int>32</int>
+                </void>
+                <void property="line">
+                 <string>38.3</string>
+                </void>
+                <void property="linePixels">
+                 <float>374.0</float>
+                </void>
+                <void property="lines">
+                 <float>2.9</float>
+                </void>
+                <void property="linesPixels">
+                 <float>29.0</float>
+                </void>
+                <void property="name">
+                 <string>screen-1-la-16</string>
+                </void>
+                <void property="level">
+                 <int>5</int>
+                </void>
+                <void property="size">
+                 <float>12.1</float>
+                </void>
+                <void property="sizePixels">
+                 <float>121.0</float>
+                </void>
+                <void property="tabOrder">
+                 <int>30</int>
+                </void>
+                <void property="title">
+                 <string>Numero Cuotas:</string>
+                </void>
+               </object>
+              </void>
+              <void index="30">
+               <object class="com.iscobol.screenpainter.beans.swing.SwingEntryField" id="SwingEntryField7">
+                <void property="column">
+                 <string>48.3</string>
+                </void>
+                <void property="columnPixels">
+                 <float>474.0</float>
+                </void>
+                <void property="id">
+                 <int>33</int>
+                </void>
+                <void property="line">
+                 <string>38.3</string>
+                </void>
+                <void property="linePixels">
+                 <float>374.0</float>
+                </void>
+                <void property="lines">
+                 <float>2.4</float>
+                </void>
+                <void property="linesPixels">
+                 <float>24.0</float>
+                </void>
+                <void property="name">
+                 <string>screen-1-ef-9</string>
+                </void>
+                <void id="ItemSettingList7" property="proposal">
+                 <void id="SettingItemArray11" property="settings"/>
+                 <void property="settings">
+                  <object idref="SettingItemArray11"/>
+                 </void>
+                </void>
+                <void property="level">
+                 <int>5</int>
+                </void>
+                <void property="size">
+                 <float>12.4</float>
+                </void>
+                <void property="sizePixels">
+                 <float>124.0</float>
+                </void>
+                <void property="tabOrder">
+                 <int>31</int>
+                </void>
+               </object>
+              </void>
+              <void index="31">
+               <object class="com.iscobol.screenpainter.beans.swing.SwingLabel">
+                <void property="column">
+                 <string>31.8</string>
+                </void>
+                <void property="columnPixels">
+                 <float>309.0</float>
+                </void>
+                <void property="id">
+                 <int>34</int>
+                </void>
+                <void property="line">
+                 <string>41.6</string>
+                </void>
+                <void property="linePixels">
+                 <float>407.0</float>
+                </void>
+                <void property="lines">
+                 <float>2.4</float>
+                </void>
+                <void property="linesPixels">
+                 <float>24.0</float>
+                </void>
+                <void property="name">
+                 <string>screen-1-la-17</string>
+                </void>
+                <void property="level">
+                 <int>5</int>
+                </void>
+                <void property="size">
+                 <float>14.9</float>
+                </void>
+                <void property="sizePixels">
+                 <float>149.0</float>
+                </void>
+                <void property="tabOrder">
+                 <int>32</int>
+                </void>
+                <void property="title">
+                 <string>Comision Reserva y Gtos.:</string>
+                </void>
+               </object>
+              </void>
+              <void index="32">
+               <object class="com.iscobol.screenpainter.beans.swing.SwingEntryField" id="SwingEntryField8">
+                <void property="column">
+                 <string>48.2</string>
+                </void>
+                <void property="columnPixels">
+                 <float>473.0</float>
+                </void>
+                <void property="id">
+                 <int>35</int>
+                </void>
+                <void property="line">
+                 <string>41.6</string>
+                </void>
+                <void property="linePixels">
+                 <float>407.0</float>
+                </void>
+                <void property="lines">
+                 <float>2.4</float>
+                </void>
+                <void property="linesPixels">
+                 <float>24.0</float>
+                </void>
+                <void property="name">
+                 <string>screen-1-ef-10</string>
+                </void>
+                <void id="ItemSettingList8" property="proposal">
+                 <void id="SettingItemArray12" property="settings"/>
+                 <void property="settings">
+                  <object idref="SettingItemArray12"/>
+                 </void>
+                </void>
+                <void property="level">
+                 <int>5</int>
+                </void>
+                <void property="size">
+                 <float>12.4</float>
+                </void>
+                <void property="sizePixels">
+                 <float>124.0</float>
+                </void>
+                <void property="tabOrder">
+                 <int>33</int>
+                </void>
+               </object>
+              </void>
+              <void index="33">
+               <object class="com.iscobol.screenpainter.beans.swing.SwingLabel">
+                <void property="column">
+                 <string>31.8</string>
+                </void>
+                <void property="columnPixels">
+                 <float>309.0</float>
+                </void>
+                <void property="id">
+                 <int>36</int>
+                </void>
+                <void property="line">
+                 <string>45.3</string>
+                </void>
+                <void property="linePixels">
+                 <float>444.0</float>
+                </void>
+                <void property="lines">
+                 <float>2.9</float>
+                </void>
+                <void property="linesPixels">
+                 <float>29.0</float>
+                </void>
+                <void property="name">
+                 <string>screen-1-la-18</string>
+                </void>
+                <void property="level">
+                 <int>5</int>
+                </void>
+                <void property="size">
+                 <float>12.1</float>
+                </void>
+                <void property="sizePixels">
+                 <float>121.0</float>
+                </void>
+                <void property="tabOrder">
+                 <int>34</int>
+                </void>
+                <void property="title">
+                 <string>Tasa Mora:</string>
+                </void>
+               </object>
+              </void>
+              <void index="34">
+               <object class="com.iscobol.screenpainter.beans.swing.SwingEntryField" id="SwingEntryField9">
+                <void property="column">
+                 <string>48.2</string>
+                </void>
+                <void property="columnPixels">
+                 <float>473.0</float>
+                </void>
+                <void property="id">
+                 <int>37</int>
+                </void>
+                <void property="line">
+                 <string>45.3</string>
+                </void>
+                <void property="linePixels">
+                 <float>444.0</float>
+                </void>
+                <void property="lines">
+                 <float>2.4</float>
+                </void>
+                <void property="linesPixels">
+                 <float>24.0</float>
+                </void>
+                <void property="name">
+                 <string>screen-1-ef-11</string>
+                </void>
+                <void id="ItemSettingList9" property="proposal">
+                 <void id="SettingItemArray13" property="settings"/>
+                 <void property="settings">
+                  <object idref="SettingItemArray13"/>
+                 </void>
+                </void>
+                <void property="level">
+                 <int>5</int>
+                </void>
+                <void property="size">
+                 <float>12.4</float>
+                </void>
+                <void property="sizePixels">
+                 <float>124.0</float>
+                </void>
+                <void property="tabOrder">
+                 <int>35</int>
+                </void>
+               </object>
+              </void>
+              <void index="35">
+               <object class="com.iscobol.screenpainter.beans.swing.SwingEntryField" id="SwingEntryField10">
+                <void property="column">
+                 <string>48.1</string>
+                </void>
+                <void property="columnPixels">
+                 <float>472.0</float>
+                </void>
+                <void property="id">
+                 <int>38</int>
+                </void>
+                <void property="line">
+                 <string>49.2</string>
+                </void>
+                <void property="linePixels">
+                 <float>483.0</float>
+                </void>
+                <void property="lines">
+                 <float>2.4</float>
+                </void>
+                <void property="linesPixels">
+                 <float>24.0</float>
+                </void>
+                <void property="name">
+                 <string>screen-1-ef-12</string>
+                </void>
+                <void id="ItemSettingList10" property="proposal">
+                 <void id="SettingItemArray14" property="settings"/>
+                 <void property="settings">
+                  <object idref="SettingItemArray14"/>
+                 </void>
+                </void>
+                <void property="level">
+                 <int>5</int>
+                </void>
+                <void property="size">
+                 <float>12.4</float>
+                </void>
+                <void property="sizePixels">
+                 <float>124.0</float>
+                </void>
+                <void property="tabOrder">
+                 <int>36</int>
+                </void>
+               </object>
+              </void>
+              <void index="36">
+               <object class="com.iscobol.screenpainter.beans.swing.SwingLabel">
+                <void property="column">
+                 <string>31.8</string>
+                </void>
+                <void property="columnPixels">
+                 <float>309.0</float>
+                </void>
+                <void property="id">
+                 <int>39</int>
+                </void>
+                <void property="line">
+                 <string>49.2</string>
+                </void>
+                <void property="linePixels">
+                 <float>483.0</float>
+                </void>
+                <void property="lines">
+                 <float>2.9</float>
+                </void>
+                <void property="linesPixels">
+                 <float>29.0</float>
+                </void>
+                <void property="name">
+                 <string>screen-1-la-19</string>
+                </void>
+                <void property="level">
+                 <int>5</int>
+                </void>
+                <void property="size">
+                 <float>13.8</float>
+                </void>
+                <void property="sizePixels">
+                 <float>138.0</float>
+                </void>
+                <void property="tabOrder">
+                 <int>37</int>
+                </void>
+                <void property="title">
+                 <string>Dias de Tolerancia:</string>
+                </void>
+               </object>
+              </void>
+              <void index="37">
+               <object class="com.iscobol.screenpainter.beans.swing.SwingDateEntry">
+                <void property="column">
+                 <string>45.4</string>
+                </void>
+                <void property="columnPixels">
+                 <float>445.0</float>
+                </void>
+                <void property="id">
+                 <int>31</int>
+                </void>
+                <void property="line">
+                 <string>30.2</string>
+                </void>
+                <void property="linePixels">
+                 <float>293.0</float>
+                </void>
+                <void property="lines">
+                 <float>-0.1</float>
+                </void>
+                <void property="linesPixels">
+                 <float>-1.0</float>
+                </void>
+                <void property="name">
+                 <string>screen-1-de-4</string>
+                </void>
+                <void property="level">
+                 <int>5</int>
+                </void>
+                <void property="size">
+                 <float>-0.1</float>
+                </void>
+                <void property="sizePixels">
+                 <float>-1.0</float>
+                </void>
+                <void property="tabOrder">
+                 <int>38</int>
+                </void>
+               </object>
+              </void>
+              <void index="38">
+               <object class="com.iscobol.screenpainter.beans.swing.SwingDateEntry">
+                <void property="column">
+                 <string>48.3</string>
+                </void>
+                <void property="columnPixels">
+                 <float>474.0</float>
+                </void>
+                <void property="id">
+                 <int>40</int>
+                </void>
+                <void property="line">
+                 <string>34.5</string>
+                </void>
+                <void property="linePixels">
+                 <float>336.0</float>
+                </void>
+                <void property="lines">
+                 <float>2.4</float>
+                </void>
+                <void property="linesPixels">
+                 <float>24.0</float>
+                </void>
+                <void property="name">
+                 <string>screen-1-de-5</string>
+                </void>
+                <void property="level">
+                 <int>5</int>
+                </void>
+                <void property="size">
+                 <float>12.4</float>
+                </void>
+                <void property="sizePixels">
+                 <float>124.0</float>
+                </void>
+                <void property="tabOrder">
+                 <int>39</int>
+                </void>
+               </object>
+              </void>
+              <void index="39">
+               <object class="com.iscobol.screenpainter.beans.swing.SwingLabel">
+                <void property="column">
+                 <string>31.8</string>
+                </void>
+                <void property="columnPixels">
+                 <float>309.0</float>
+                </void>
+                <void property="id">
+                 <int>41</int>
+                </void>
+                <void property="line">
+                 <string>21.6</string>
+                </void>
+                <void property="linePixels">
+                 <float>207.0</float>
+                </void>
+                <void property="lines">
+                 <float>2.9</float>
+                </void>
+                <void property="linesPixels">
+                 <float>29.0</float>
+                </void>
+                <void property="name">
+                 <string>screen-1-la-20</string>
+                </void>
+                <void property="level">
+                 <int>5</int>
+                </void>
+                <void property="size">
+                 <float>12.1</float>
+                </void>
+                <void property="sizePixels">
+                 <float>121.0</float>
+                </void>
+                <void property="tabOrder">
+                 <int>40</int>
+                </void>
+                <void property="title">
+                 <string>Acta Resolucion:</string>
+                </void>
+               </object>
+              </void>
+              <void index="40">
+               <object class="com.iscobol.screenpainter.beans.swing.SwingEntryField" id="SwingEntryField11">
+                <void property="column">
+                 <string>48.1</string>
+                </void>
+                <void property="columnPixels">
+                 <float>472.0</float>
+                </void>
+                <void property="id">
+                 <int>42</int>
+                </void>
+                <void property="line">
+                 <string>21.8</string>
+                </void>
+                <void property="linePixels">
+                 <float>209.0</float>
+                </void>
+                <void property="lines">
+                 <float>2.4</float>
+                </void>
+                <void property="linesPixels">
+                 <float>24.0</float>
+                </void>
+                <void property="name">
+                 <string>screen-1-ef-8</string>
+                </void>
+                <void id="ItemSettingList11" property="proposal">
+                 <void id="SettingItemArray15" property="settings"/>
+                 <void property="settings">
+                  <object idref="SettingItemArray15"/>
+                 </void>
+                </void>
+                <void property="level">
+                 <int>5</int>
+                </void>
+                <void property="size">
+                 <float>12.6</float>
+                </void>
+                <void property="sizePixels">
+                 <float>126.0</float>
+                </void>
+                <void property="tabOrder">
+                 <int>41</int>
+                </void>
+               </object>
+              </void>
+             </array>
+            </void>
+            <void property="name">
+             <string>screen-1-tp-1</string>
+            </void>
+            <void property="tabOrder">
+             <int>1</int>
+            </void>
+            <void property="visibleVariable">
+             <string>screen-1-tp-1-vis</string>
+            </void>
+           </object>
+          </void>
+          <void index="1">
+           <object class="com.iscobol.screenpainter.beans.TabPage" id="TabPage0">
+            <string>Garantías</string>
+            <void id="AbstractBeanControlArray0" property="components"/>
+            <void property="components">
+             <object idref="AbstractBeanControlArray0"/>
+            </void>
+            <void property="name">
+             <string>screen-1-tp-2</string>
+            </void>
+            <void property="tabOrder">
+             <int>2</int>
+            </void>
+            <void property="visibleVariable">
+             <string>screen-1-tp-2-vis</string>
+            </void>
+           </object>
+          </void>
+         </array>
+        </void>
+        <void property="level">
+         <int>3</int>
+        </void>
+        <void property="size">
+         <float>60.6</float>
+        </void>
+        <void property="sizePixels">
+         <float>606.0</float>
+        </void>
+        <void property="tabOrder">
+         <int>1</int>
+        </void>
+       </object>
+      </void>
+     </array>
+    </void>
+    <void id="DockableList0" property="layout">
+     <void id="SettingItemArray16" property="settings"/>
+     <void property="settings">
+      <object idref="SettingItemArray16"/>
+     </void>
+    </void>
+    <void property="lines">
+     <float>64.6</float>
+    </void>
+    <void id="MenuArray0" property="menus"/>
+    <void property="menus">
+     <object idref="MenuArray0"/>
+    </void>
+    <void property="name">
+     <string>screen-1</string>
+    </void>
+    <void id="IToolbarArray0" property="toolbars"/>
+    <void property="toolbars">
+     <object idref="IToolbarArray0"/>
+    </void>
+    <void property="windowHandle">
+     <string>window-handle</string>
+    </void>
+   </object>
+  </void>
+ </array>
+ <array class="com.iscobol.screenpainter.beans.types.VariableType" length="3">
+  <void index="0">
+   <object class="com.iscobol.screenpainter.beans.types.VariableType" id="VariableType0">
+    <void id="SettingTreeItemArray0" property="children"/>
+    <void property="children">
+     <object idref="SettingTreeItemArray0"/>
+    </void>
+    <void property="level">
+     <string>77</string>
+    </void>
+    <void property="name">
+     <string>window-handle</string>
+    </void>
+    <void property="usage">
+     <object class="com.iscobol.screenpainter.beans.types.VariableUsage">
+      <int>25</int>
+     </object>
+    </void>
+    <void property="NType">
+     <int>1003</int>
+    </void>
+   </object>
+  </void>
+  <void index="1">
+   <object class="com.iscobol.screenpainter.beans.types.VariableType" id="VariableType1">
+    <void id="SettingTreeItemArray1" property="children"/>
+    <void property="children">
+     <object idref="SettingTreeItemArray1"/>
+    </void>
+    <void property="level">
+     <string>77</string>
+    </void>
+    <void property="name">
+     <string>screen-1-tp-1-vis</string>
+    </void>
+    <void property="picture">
+     <string>9</string>
+    </void>
+    <void property="NType">
+     <int>1004</int>
+    </void>
+   </object>
+  </void>
+  <void index="2">
+   <object class="com.iscobol.screenpainter.beans.types.VariableType" id="VariableType2">
+    <void id="SettingTreeItemArray2" property="children"/>
+    <void property="children">
+     <object idref="SettingTreeItemArray2"/>
+    </void>
+    <void property="level">
+     <string>77</string>
+    </void>
+    <void property="name">
+     <string>screen-1-tp-2-vis</string>
+    </void>
+    <void property="picture">
+     <string>9</string>
+    </void>
+    <void property="NType">
+     <int>1004</int>
+    </void>
+   </object>
+  </void>
+ </array>
+ <object class="com.iscobol.screenpainter.propertysheet.EventParagraphs"/>
+ <object class="com.iscobol.screenpainter.beans.types.FileSection" id="FileSection0">
+  <void id="FDAttributesArray0" property="FDAttributes"/>
+  <void property="FDAttributes">
+   <object idref="FDAttributesArray0"/>
+  </void>
+  <void id="FileEntryArray0" property="FDEntries"/>
+  <void property="FDEntries">
+   <object idref="FileEntryArray0"/>
+  </void>
+  <void id="FileEntryArray1" property="SLEntries"/>
+  <void property="SLEntries">
+   <object idref="FileEntryArray1"/>
+  </void>
+  <void id="DataSetArray0" property="dataSets"/>
+  <void property="dataSets">
+   <object idref="DataSetArray0"/>
+  </void>
+  <void id="FileEntryArray2" property="declarativeEntries"/>
+  <void property="declarativeEntries">
+   <object idref="FileEntryArray2"/>
+  </void>
+ </object>
+ <object class="com.iscobol.screenpainter.beans.types.Repository" id="Repository0">
+  <void id="Repository$EntryArray0" property="entries"/>
+  <void property="entries">
+   <object idref="Repository$EntryArray0"/>
+  </void>
+  <void id="FileEntryArray3" property="fileEntries"/>
+  <void property="fileEntries">
+   <object idref="FileEntryArray3"/>
+  </void>
+ </object>
+ <object class="java.util.Hashtable">
+  <void method="put">
+   <string>iscobol.release</string>
+   <string>isCOBOL2018R1</string>
+  </void>
+ </object>
+ <object class="com.iscobol.screenpainter.beans.types.AlphabetList" id="AlphabetList0">
+  <void id="AlphabetArray0" property="alphabets"/>
+  <void property="alphabets">
+   <object idref="AlphabetArray0"/>
+  </void>
+  <void id="FileEntryArray4" property="fileEntries"/>
+  <void property="fileEntries">
+   <object idref="FileEntryArray4"/>
+  </void>
+ </object>
+ <array class="com.iscobol.reportdesigner.beans.Report" length="0"/>
+ <object class="com.iscobol.screenpainter.beans.types.VariableTypeList" id="VariableTypeList0">
+  <void id="SettingItemArray17" property="settings"/>
+  <void property="settings">
+   <object idref="SettingItemArray17"/>
+  </void>
+ </object>
+</java>
